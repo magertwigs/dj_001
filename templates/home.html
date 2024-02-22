@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="icon" href="{% static 'images/home.png' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <style>
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        h1{
+            color: white;
+            background-color: darkblue;
+            line-height: 80px;
+            text-align: center;
+            font-size: 40px;
+        }
+        h1:hover{
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body class="bg-secondary-subtle">
+<h1>Homepage</h1>
+<a class="btn btn-outline-info" href="{% url 'about' %}">About</a>
+<a class="btn btn-outline-info" href="{% url 'form' %}">Form</a>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque blanditiis consequatur cum eaque eveniet excepturi expedita facilis illo impedit, magni, nam nihil quam totam unde vero voluptate. Autem, laudantium.</p>
+<img src="{% static 'images/tde.webp' %}" alt="">
+<img src="{% static 'images/tde1.webp' %}" alt="">
+<img src="{% static 'images/tde2.webp' %}" alt="">
+<img src="{% static 'images/TDE4.webp' %}" alt="">
+<img src="{% static 'images/tde1.jpg' %}" alt="">
+<img src="{% static 'images/tde2.jpg' %}" alt="">
+
+<br><br>
+
+<h1>Payment</h1>
+<p class="paragraph2"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ex, ullam! Ad at deleniti deserunt distinctio, dolorum eligendi excepturi illo ipsa libero nam natus placeat, praesentium, quas quibusdam reiciendis suscipit!</span><span>Alias consectetur cum dicta distinctio libero magni perspiciatis tempora, tenetur voluptate! Commodi debitis dignissimos distinctio ducimus illo iusto minima nisi officiis sit voluptatibus? Aliquid dignissimos exercitationem ipsam molestiae praesentium repudiandae!</span></p>
+<img id="image" src="{% static 'images/tde5.jpg' %}" alt="">
+
+</body>
+</html>
